@@ -19,7 +19,7 @@ def index(request):
         return redirect('/')
 
     context = {'tasks': tasks, 'form': form}
-    return render(request, 'tasks/index.html', context)
+    return render(request, 'tasks/list.html', context)
 
 
 def updateTask(request, pk):
